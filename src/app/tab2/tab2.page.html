@@ -1,17 +1,78 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
+    <ion-title>Mi Biografia</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Eventos mas relevantes en mi vida</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+      <img src="assets/imgs/perfil.jpg" alt="Foto de perfil" class="perfil-img"/>
+      <ion-list>
+        <ion-item>
+          <ion-label>
+            <h2>Naci el 1 de agosto del 2001</h2>
+          </ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            <h2>Estudie en la EPN</h2>
+            <p>Septiembre 2021 - Presente</p>
+          </ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            <p>Naci el 1 de Agosto del año 2001 en la ciudad de Quito. Provengo de una familia humilde. Me encantaba la lectura desde una edad temprana.</p>
+            <p>                                                     </p>
+            <p>Se podria decir que la tecnologia estuvo presente desde temprana edad. Mi curiosidad fue alimentada por los escritos del maestro Julio Verne, en donde sus relatos de ciudades futuristas, correos por medio de "cables" y trenes que recorrian Europa a grandes velocidades cautibaron mi amor por la lectura y la tecnologia.</p>
+            <p>Fue asi como poco a poco creci lleno de una gran facinacion por los libros y la tecnologia. Eventualmente me encontraria con el segundo mas grande autor que ha influido en mi. El maestro Isaac Assimov quien definitivamente influyo en quien soy ahora con sus escritos de robots y una humanidad aun mas avanzada.</p>
+            <p>Si bien ya tenia encaminado un gusto por la tecnologia y la computacion, a la edad de 12 años descubriria mi segundo gran talento. La oratoria, Fue algo que hasta ahora ha marcado mi persona y me ha llevado lejos. Siendo que en 2017 y 2019 Gane los concursos de oratoria intercolegiales.</p>
+            <p>Si bien el bachillerato estuvo marcado por una epoca de rebeldia, no seria hasta la pandemia donde definitivamente me llego el cambio y oportunidad mas grande de mi vida. Estudiar en la EPN, ha sido uno de los retos mas grande y que con satisfaccion puedo decir, estoy a punto de culminar.</p>
+            <p>Esta es una breve historia de mi persona y los eventos que mas han influido en mi vida. </p>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+ 
+    
+ 
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Un poco mas sobre mis aficiones</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="6">
+            <a href="" target="_blank">
+              <img src="assets/imgs/foto1.jpeg" class="galeria-img" alt="Pagina Funly">
+            </a>
+          </ion-col>
+          <ion-col size="6">
+            <a href="" target="_blank">
+              <img src="assets/imgs/foto2.png" class="galeria-img" alt="Proyecto 2">
+            </a>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="6">
+            <a href="" target="_blank">
+              <img src="assets/imgs/foto3.png" class="galeria-img" alt="Proyecto 3">
+            </a>
+          </ion-col>
+          <ion-col size="6">
+            <a href="" target="_blank">
+              <img src="assets/imgs/farmacia.png" class="galeria-img" alt="Proyecto 4">
+            </a>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
