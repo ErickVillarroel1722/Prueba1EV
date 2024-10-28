@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Calcular Días Entre Fechas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="form-container">
+    <form (submit)="calcularDiferencia(); $event.preventDefault()">
+      <ion-item>
+        <ion-label position="floating">Fecha de Inicio</ion-label>
+        <ion-datetime [(ngModel)]="fechaInicio" name="fechaInicio"></ion-datetime>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Fecha de Fin</ion-label>
+        <ion-datetime [(ngModel)]="fechaFin" name="fechaFin"></ion-datetime>
+      </ion-item>
+
+      <ion-button expand="full" type="submit">Calcular Días</ion-button>
+    </form>
+
+    <div *ngIf="diferenciaDias !== null">
+      <h2>Días entre fechas: {{ diferenciaDias }}</h2>
+    </div>
+  </div>
+</ion-content>

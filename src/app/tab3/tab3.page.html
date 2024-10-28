@@ -1,17 +1,51 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
+    <ion-title>Fórmula Cuadrática</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <div class="formula-container">
+    <span class="formula">ax<sup>2</sup> + bx + c = 0</span>
+  </div>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <form (ngSubmit)="calcularRaices()">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="3" class="equation-part">
+          <ion-item>
+            <ion-label position="floating">a</ion-label>
+            <ion-input [(ngModel)]="a" name="a" type="number"></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size="1" class="equation-symbol">
+          <span>x<sup>2</sup> +</span>
+        </ion-col>
+        <ion-col size="3" class="equation-part">
+          <ion-item>
+            <ion-label position="floating">b</ion-label>
+            <ion-input [(ngModel)]="b" name="b" type="number"></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size="1" class="equation-symbol">
+          <span>x +</span>
+        </ion-col>
+        <ion-col size="3" class="equation-part">
+          <ion-item>
+            <ion-label position="floating">c</ion-label>
+            <ion-input [(ngModel)]="c" name="c" type="number"></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size="1" class="equation-symbol">
+          <span>= 0</span>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-button expand="block" type="submit">Calcular</ion-button>
+  </form>
+
+  <ion-item *ngIf="resultado">
+    <ion-label>Resultado: {{ resultado }}</ion-label>
+  </ion-item>
 </ion-content>
