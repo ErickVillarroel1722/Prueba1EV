@@ -6,6 +6,14 @@
 
 <table>
   <tr>
+    <td><strong>Icono de la Aplicación</strong><br>
+      <img src="https://github.com/user-attachments/assets/e540a4ef-6d82-4dfc-916d-07c80ba027e0" width="250"/>
+    </td>
+    <td><strong>Splash Screen de la Aplicación</strong><br>
+      <img src="https://github.com/user-attachments/assets/407b2c86-37bf-416b-a8c9-d303a910d059" width="250"/>
+    </td>
+  </tr>
+  <tr>
     <td><strong>Pantalla de GitHub</strong><br>
       <img src="https://github.com/user-attachments/assets/a9b21f36-173b-46cf-bb1a-9b7ffd21a7a7" width="250"/>
     </td>
@@ -29,30 +37,10 @@
   </tr>
 </table>
 
-
 Configuración del Proyecto:
-
 Empecé creando un proyecto en Ionic con Angular.
 Instalé e importé los módulos necesarios, como Filesystem de Capacitor para interactuar con el sistema de archivos y jsPDF para generar archivos PDF.
 Diseño de la Interfaz de Usuario:
+Se uso una interfaz amigable que los usuarios podran entender con facilidad. Tambien se le agregaron un Screensplash y un Icono Unico a la app. 
 
-En el HTML, creé un formulario con un ion-textarea para que el usuario pueda escribir el texto que quiere guardar.
-Agregué un botón "Guardar Texto" que solo se habilita si hay texto ingresado.
-Configuré un ion-toast para mostrar mensajes de éxito o error cuando el usuario guarda el texto.
-Lógica en TypeScript:
 
-En el componente Tab4Page, desarrollé la lógica que:
-Verifica que el campo texto no esté vacío antes de intentar guardarlo.
-Genera un archivo PDF con el texto del usuario usando jsPDF.
-Convierte el PDF en formato base64 para poder guardarlo en el sistema de archivos del dispositivo.
-Guarda el archivo en el directorio de documentos usando Filesystem de Capacitor.
-Muestra un mensaje de éxito o error a través de un ion-toast.
-Manejo de Errores y Mensajes:
-
-Configuré el toast para notificar si hay algún error al guardar o si el guardado fue exitoso.
-También añadí una verificación para alertar al usuario si intenta guardar sin haber ingresado texto.
-Pruebas en Dispositivos:
-
-Primero verifiqué que todo funcionara bien en la PC y luego generé una APK para probar en el celular.
-Ajusté la lógica de guardado para asegurar que el archivo se guarde correctamente en el dispositivo y que el usuario pueda acceder a él.
-Al finalizar, logré que la app tomara el texto ingresado por el usuario, lo guardara como PDF en el sistema de archivos del dispositivo y le notificara sobre el estado del guardado.
